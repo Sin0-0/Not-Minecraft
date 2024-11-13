@@ -1135,6 +1135,7 @@ GameObject:
   - component: {fileID: 1665174239}
   - component: {fileID: 1665174238}
   - component: {fileID: 1665174237}
+  - component: {fileID: 1665174244}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1170,7 +1171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  jumpForce: 8
+  jumpForce: 10
 --- !u!54 &1665174239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1288,6 +1289,21 @@ Transform:
   - {fileID: 90804624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665174244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665174236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9926dbfc5d3b5974baf89b0e92d4f7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movingLeft: 0
+  readyToShoot: 1
+  projectilePrefab: {fileID: 2497461649172038097, guid: 18402f5ffbe11e2458a672d49dcca28b, type: 3}
 --- !u!1 &1694931630
 GameObject:
   m_ObjectHideFlags: 0

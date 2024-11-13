@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
 
     private void PlayerJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             RaycastHit hit;
             // if the raycast returns something  then the player is touching the ground.
@@ -94,7 +94,14 @@ public class Player : MonoBehaviour
 
             transform.position = startPos;
         }
-
+        if (other.gameObject.tag == "Enemy1")
+        {
+            Respawn();
+        }
+        if (other.gameObject.tag == "Enemy2")
+        {
+            Respawn();
+        }
 
 
     }
