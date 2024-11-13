@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private int life;
     private int lives;
     public float speed;
     public float jumpForce;
@@ -55,10 +56,10 @@ public class Player : MonoBehaviour
 
     private void PlayerJump()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             RaycastHit hit;
-            
+            // if the raycast returns something  then the player is touching the ground.
             if (Physics.Raycast(transform.position, Vector3.down, out hit, 1.5f))
             {
                 Debug.Log("Touching the ground");
@@ -101,12 +102,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            //transform.position += Vector3.left * speed * Time.deltaTime;
+            
             rb.MovePosition(transform.position + Vector3.left * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            //transform.position += Vector3.right * speed * Time.deltaTime;
+            
             rb.MovePosition(transform.position + Vector3.right * speed * Time.deltaTime);
         }
     }
@@ -124,14 +125,5 @@ public class Player : MonoBehaviour
             }
         }
     }
-    IEnumerator Stun()
-    {
-
-        speed = 0;
-        jumpForce = 0;
-        yield return new WaitForSeconds(3);
-        speed = 8.5f;
-        jumpForce = 7.5f;
-
-    }
+   
 }
