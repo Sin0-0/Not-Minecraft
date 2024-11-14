@@ -102,6 +102,11 @@ public class Player : MonoBehaviour
         {
             Respawn();
         }
+        if (other.gameObject.tag == "PowerUp")
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(DoubleJump());
+        }
 
 
     }
@@ -132,5 +137,15 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    IEnumerator DoubleJump()
+    {
+        speed = 8.5f;
+        jumpForce = 14f;
+        yield return new WaitForSeconds(3);
+        speed = 8.5f;
+        jumpForce = 7f;
+    }
+        
    
 }
