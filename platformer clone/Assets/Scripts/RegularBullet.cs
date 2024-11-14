@@ -9,13 +9,14 @@ public class RegularBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         BulletMove();
+
     }
 
     private void BulletMove()
@@ -30,4 +31,18 @@ public class RegularBullet : MonoBehaviour
             transform.position += Vector3.right * speed * Time.deltaTime;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy2") 
+        {
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.tag == "Enemy1")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
 }
