@@ -7,8 +7,13 @@ TagManager:
   - Portal
   - Enemy1
   - Wall
+<<<<<<< Updated upstream
   - PowerUp
   - HeavyPowerUp
+=======
+  - Full Restore
+  - Extra Health
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
