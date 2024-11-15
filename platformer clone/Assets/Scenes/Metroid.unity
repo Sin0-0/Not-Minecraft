@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 94180660}
   - component: {fileID: 94180659}
   m_Layer: 0
-  m_Name: HeavyPowerUp
+  m_Name: Full Restore
   m_TagString: HeavyPowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 340892654}
   - component: {fileID: 340892653}
   - component: {fileID: 340892652}
+  - component: {fileID: 340892656}
   m_Layer: 0
   m_Name: PowerUp (1)
   m_TagString: PowerUp
@@ -442,6 +443,20 @@ Transform:
   - {fileID: 484890822}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &340892656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340892651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac5653604b097745ac212276ff6fb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: 10
+  script: {fileID: 0}
 --- !u!1 &397841546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1495,7 @@ GameObject:
   - component: {fileID: 1665174238}
   - component: {fileID: 1665174237}
   - component: {fileID: 1665174244}
+  - component: {fileID: 1665174245}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1514,6 +1530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008cfaab346dfa64782e0094f356fa7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 0
   speed: 8.5
   jumpForce: 7
 --- !u!54 &1665174239
@@ -1649,6 +1666,19 @@ MonoBehaviour:
   movingLeft: 0
   readyToShoot: 1
   projectilePrefab: {fileID: 2497461649172038097, guid: 18402f5ffbe11e2458a672d49dcca28b, type: 3}
+--- !u!114 &1665174245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665174236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016d53bd4d84d6a41b3a888209f88beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 99
 --- !u!1 &1694931630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,6 +1933,7 @@ GameObject:
   - component: {fileID: 1877364752}
   - component: {fileID: 1877364751}
   - component: {fileID: 1877364750}
+  - component: {fileID: 1877364754}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: PowerUp
@@ -1997,6 +2028,20 @@ Transform:
   - {fileID: 2116732739}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1877364754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877364749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac5653604b097745ac212276ff6fb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUp: 10
+  script: {fileID: 0}
 --- !u!1 &1879652743
 GameObject:
   m_ObjectHideFlags: 0
