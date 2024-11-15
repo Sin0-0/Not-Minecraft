@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     private int life;
-    private int lives;
+    public int lives;
     public float speed;
     public float jumpForce;
     private Rigidbody rb;
