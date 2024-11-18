@@ -9,6 +9,8 @@ TagManager:
   - Wall
   - PowerUp
   - HeavyPowerUp
+  - Regular Bullet
+  - Heavy Bullet
   layers:
   - Default
   - TransparentFX
