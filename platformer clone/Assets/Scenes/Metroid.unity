@@ -252,7 +252,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 103929123}
   - component: {fileID: 103929126}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -629,7 +629,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -1161,7 +1161,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -1446,7 +1446,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -1837,7 +1837,7 @@ Transform:
   m_GameObject: {fileID: 340892651}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 90.26, y: 0.91, z: 0}
+  m_LocalPosition: {x: 155.79, y: 0.07, z: 0}
   m_LocalScale: {x: 0.46967, y: 0.46967, z: 0.46967}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2265,7 +2265,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -2987,8 +2987,8 @@ Transform:
   m_GameObject: {fileID: 688029770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23033524, y: -2.3355978, z: 0}
-  m_LocalScale: {x: -0.06114889, y: 0.21966472, z: 1}
+  m_LocalPosition: {x: 0.1713, y: -2.546, z: 0}
+  m_LocalScale: {x: -0.0378371, y: 0.21966472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 316762067}
@@ -3384,7 +3384,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -3417,7 +3417,7 @@ Transform:
   m_GameObject: {fileID: 746104474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23849471, y: -2.1319914, z: 0}
+  m_LocalPosition: {x: 0.2871, y: -2.1319914, z: 0}
   m_LocalScale: {x: -0.14230704, y: 0.21966472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3716,7 +3716,7 @@ Transform:
   m_GameObject: {fileID: 881882406}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19769731, y: -2.5509503, z: 0}
+  m_LocalPosition: {x: 0.4197, y: -2.712, z: 0}
   m_LocalScale: {x: -0.06114889, y: 0.21966472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4707,7 +4707,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -5761,7 +5761,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1666279203}
-  - {fileID: 2127094525}
   - {fileID: 550799604}
   - {fileID: 1925559357}
   - {fileID: 1064051344}
@@ -6144,6 +6143,7 @@ Transform:
   - {fileID: 1555787204}
   - {fileID: 241696491}
   - {fileID: 1535378799}
+  - {fileID: 2127094525}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599820947
@@ -6408,7 +6408,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
@@ -6538,12 +6538,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636390645}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.51, y: 0.62, z: 0}
-  m_LocalScale: {x: 0.23986, y: 1.2339838, z: 0.23986}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.44333038, y: -6.1494827, z: 0}
+  m_LocalScale: {x: -0.06971566, y: 12.499706, z: 0.23986}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2127094525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1638629802
 GameObject:
@@ -7639,12 +7639,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736989914}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.52, y: 0.62, z: 0}
-  m_LocalScale: {x: 0.23986, y: 1.2339838, z: 0.23986}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.43152887, y: -6.1494827, z: 0}
+  m_LocalScale: {x: -0.06971566, y: 12.499706, z: 0.23986}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2127094525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773515007
 GameObject:
@@ -9029,7 +9029,7 @@ Transform:
   m_GameObject: {fileID: 2068475960}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.66, y: 0, z: 0}
+  m_LocalPosition: {x: 2.41, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9259,7 +9259,7 @@ GameObject:
   - component: {fileID: 2127094526}
   - component: {fileID: 2127094529}
   m_Layer: 0
-  m_Name: Cube (20)
+  m_Name: Bounce
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9274,11 +9274,13 @@ Transform:
   m_GameObject: {fileID: 2127094524}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.143, y: -2.483, z: 0}
-  m_LocalScale: {x: -0.050906733, y: 0.019327125, z: 1}
+  m_LocalPosition: {x: -5.082695, y: 9.503609, z: -29.559822}
+  m_LocalScale: {x: -3.440547, y: 0.09872102, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1535378799}
+  m_Children:
+  - {fileID: 1636390650}
+  - {fileID: 1736989919}
+  m_Father: {fileID: 1581425514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2127094526
 BoxCollider:
@@ -9397,5 +9399,3 @@ SceneRoots:
   - {fileID: 1897114720}
   - {fileID: 608705217}
   - {fileID: 909451470}
-  - {fileID: 1636390650}
-  - {fileID: 1736989919}
