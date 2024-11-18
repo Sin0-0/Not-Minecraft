@@ -11,6 +11,7 @@ TagManager:
   - HeavyPowerUp
   - Regular Bullet
   - Heavy Bullet
+  - StartPos
   layers:
   - Default
   - TransparentFX

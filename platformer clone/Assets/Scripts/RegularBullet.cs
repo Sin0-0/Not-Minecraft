@@ -6,10 +6,12 @@ public class RegularBullet : MonoBehaviour
 {
     public bool goingLeft;
     public float speed;
+    private Vector3 StartPos;
+    public GameObject StartPoint;
     // Start is called before the first frame update
     void Start()
     {
-
+        StartPos = StartPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -47,6 +49,6 @@ public class RegularBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+ 
 
 }

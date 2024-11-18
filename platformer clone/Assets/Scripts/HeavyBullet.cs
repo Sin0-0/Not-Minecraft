@@ -11,12 +11,13 @@ public class HeavyBullet : MonoBehaviour
 {
     public bool goingLeft;
     public float speed;
-    private Vector3 startPos;
+    private Vector3 StartPos;
+    public GameObject StartPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        StartPos = StartPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -60,7 +61,7 @@ public class HeavyBullet : MonoBehaviour
          //   Destroy(other.gameObject.tag == "Regular Bullet"); //destroy regular bullets
 
 
-            transform.position = startPos; //startPos is where the regular bullets were
+    //        transform.position = "StartPos"; //startPos is where the regular bullets were
         }
     }
 }
