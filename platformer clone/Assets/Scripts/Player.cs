@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    private int life;
+    public int life;
     public int lives;
     public float speed;
     public float jumpForce;
@@ -47,12 +47,12 @@ public class Player : MonoBehaviour
 
     private void Respawn()
     {
-        lives--;
+        
         transform.position = startPos;
 
         if (lives == 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 
@@ -98,10 +98,12 @@ public class Player : MonoBehaviour
         }
         if (other.gameObject.tag == "Enemy1")
         {
+           
             Respawn();
         }
         if (other.gameObject.tag == "Enemy2")
         {
+            
             Respawn();
         }
         if (other.gameObject.tag == "PowerUp")
@@ -109,6 +111,12 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             StartCoroutine(DoubleJump());
         }
+        if (other.gameObject.tag == "BulletPack")
+        {
+            Destroy(other.gameObject);
+            
+        }
+
 
 
     }

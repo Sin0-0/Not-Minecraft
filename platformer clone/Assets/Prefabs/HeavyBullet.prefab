@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 409434976681642272}
   - component: {fileID: 370557925323392733}
   - component: {fileID: 3608268740221798886}
-  - component: {fileID: 7345505411778508173}
+  - component: {fileID: -8391209942183176042}
   m_Layer: 0
   m_Name: HeavyBullet
   m_TagString: Untagged
@@ -106,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7345505411778508173
+--- !u!114 &-8391209942183176042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,3 +118,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5b2d48f64b71b4e9bc2eb00bfe92c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goingLeft: 0
+  speed: 15

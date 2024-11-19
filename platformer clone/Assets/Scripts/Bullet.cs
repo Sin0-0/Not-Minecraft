@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
-
+    
     public bool goingLeft;
     public float speed;
 
@@ -34,6 +34,23 @@ public class Bullet : MonoBehaviour
         {
 
             transform.position += Vector3.right* speed * Time.deltaTime;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy2")
+        {
+           
+        }
+
+        if (collision.gameObject.tag == "Enemy1")
+        {
+           
+        }
+        if (collision.gameObject.tag == "Wall")
+        {
+            
         }
     }
 }

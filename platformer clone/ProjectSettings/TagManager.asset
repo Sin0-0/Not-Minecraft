@@ -12,6 +12,11 @@ TagManager:
   - Regular Bullet
   - Heavy Bullet
   - StartPos
+  - Life
+  - Lives
+  - LifeScore
+  - LivesScore
+  - BulletPack
   layers:
   - Default
   - TransparentFX

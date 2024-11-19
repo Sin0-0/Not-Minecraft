@@ -29,13 +29,13 @@ public class PlayerShoot2 : MonoBehaviour
         if (!movingLeft)
 
         {
-            GameObject regularBullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            regularBullet.GetComponent<RegularBullet>().goingLeft = movingLeft;
+            GameObject heavyBullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+            heavyBullet.GetComponent<HeavyBullet>().goingLeft = movingLeft;
         }
         else if (movingLeft)
         {
-            GameObject regularBullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            regularBullet.GetComponent<RegularBullet>().goingLeft = movingLeft;
+            GameObject heavyBullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+            heavyBullet.GetComponent<HeavyBullet>().goingLeft = movingLeft;
         }
     }
 

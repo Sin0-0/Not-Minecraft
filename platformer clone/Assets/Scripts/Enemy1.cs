@@ -6,7 +6,7 @@ public class Enemy1 : MonoBehaviour
 {
 
 
-    private int EnemyLife;
+    
     public GameObject leftPoint;
     public GameObject rightPoint;
     
