@@ -12,7 +12,7 @@ public class PlayerShoot : MonoBehaviour
     public bool readyToShoot;
     public GameObject projectilePrefab;
 
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,18 +37,11 @@ public class PlayerShoot : MonoBehaviour
 
     private void SpawnProjectile()
     {
-        if (!movingLeft)
-        
-        {
-            GameObject bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            bullet.GetComponent<Bullet>().goingLeft = movingLeft;
-        }
-        else if (movingLeft)
-        {
-            GameObject bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            bullet.GetComponent<Bullet>().goingLeft = movingLeft;
-        }
+        GameObject bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        bullet.GetComponent<Bullet>().goingLeft = movingLeft;
     }
+
+    
 
 
     IEnumerator Cooldown()

@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public float jumpForce;
     private Rigidbody rb;
     private Vector3 startPos;
+    private PlayerShoot playerShoot;
    
 
 
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerShoot = GetComponent<PlayerShoot>();
         rb = GetComponent<Rigidbody>();
         startPos = transform.position;
     }
@@ -114,13 +116,21 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            
+                                 
             rb.MovePosition(transform.position + Vector3.left * speed * Time.deltaTime);
+            if (playerShoot != null)
+            {
+                playerShoot.movingLeft = true;
+            }
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
+        
         {
             
             rb.MovePosition(transform.position + Vector3.right * speed * Time.deltaTime);
+            if (playerShoot != null)
+            {
+                playerShoot.movingLeft = false;            }
         }
     }
 
